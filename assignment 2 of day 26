@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+	int os,n,a[100],ps=0,m,i;
+	scanf("%d",&n);
+	os=n*(n+1)/2;
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<n;i++)
+	{
+		ps=ps+a[i];
+	}
+    m=os-ps;
+	printf("%d",m);
+}
